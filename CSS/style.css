@@ -1,0 +1,374 @@
+/* Redefinição de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base da página */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 10px;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+}
+
+.container-imagem {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Menu */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Informações de contato no cabeçalho */
+.contato {
+  float: right;
+  margin-top: 10px;
+}
+
+.contato p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Seção de destaque */
+#destaque {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#destaque img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+/* Seção sobre */
+#sobre {
+  padding: 50px 0;
+}
+
+#sobre h2 {
+  text-align: center;
+}
+
+#sobre p {
+  text-align: justify;
+}
+
+/* Equipe */
+#equipe {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.membro {
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.membro img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Seção de serviços */
+#servicos {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#servicos h2 {
+  text-align: center;
+}
+
+#servicos ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#servicos li {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#servicos li img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+/* Seção de produtos */
+#produtos {
+  padding: 50px 0;
+}
+
+#produtos h2 {
+  text-align: center;
+}
+
+#produtos p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.produtos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.produto img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+/* Seção de depoimentos */
+#depoimentos {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#depoimentos h2 {
+  text-align: center;
+}
+
+#depoimentos p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Seção de blog */
+#blog {
+  padding: 50px 0;
+}
+
+#blog h2 {
+  text-align: center;
+}
+
+#blog p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Seção de contato */
+#contato {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#contato h2 {
+  text-align: center;
+}
+
+#contato form {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#contato textarea {
+  height: 100px;
+}
+
+#contato input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .redes-sociais {
+  float: right;
+}
+
+footer .redes-sociais a {
+  margin-right: 10px;
+}
+
+footer .direitos {
+  margin-top: 10px;
+}
+
+/* Estilo dos links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+

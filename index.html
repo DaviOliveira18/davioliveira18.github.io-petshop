@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Animal Pet Shop</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="shortcut icon" href="IMAGEM/slogan.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#destaque">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="contato">
+        <p>Telefone: (xx) xxxx-xxxx</p>
+        <p>Email: exemplo@petshop.com</p>
+        <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="destaque">
+        <div class="container-imagem">
+            <img src="IMAGEM/slogan.png" alt="Imagem de Destaque">
+        </div>
+        
+        <h1>Bem-vindo ao Reino Animal Pet Shop!</h1>
+        <p>Oferecemos os melhores serviços e produtos para o seu pet.</p>
+    </section>
+    <section id="sobre">
+      <h2>Sobre o Reino Animal Pet Shop</h2>
+      <p>O Reino Animal Pet Shop foi fundado em 2000 com a missão de proporcionar os melhores cuidados para os seus animais de estimação.</p>
+      <p>Nossa equipe é composta por profissionais apaixonados por animais, que estão sempre prontos para oferecer o melhor atendimento para você e seu pet.</p>
+      <section id="equipe">
+        <h2>Conheça nossa Equipe</h2>
+        <div class="membro">
+          <img src="IMAGEM/dr.leila.jfif" alt="Foto do Membro da Equipe(dr.leila)">
+          <h3>Dr. Leila</h3>
+          <p>Cargo: Médica veterinária</p>
+        </div>
+        <div class="membro">
+          <img src="IMAGEM/maurício.jpg" alt="Foto do Membro da Equipe(Maurício tosador)">
+          <h3>Maurício</h3>
+          <p>Cargo: Groomer</p>
+        </div>
+      </section>
+    </section>
+    <section id="servicos">
+        <h2>Serviços do Reino Animal Pet Shop</h2>
+        <ul>
+          <li>
+            <h3>Banho e Tosa</h3>
+            <p>Realizamos banho completo, tosa higiênica e tosa especial com diversas opções de cortes.</p>
+            <img src="IMAGEM/banhoetosa.jfif" alt="Imagem de Banho e Tosa">
+          </li>
+          <li>
+            <h3>Consultas Veterinárias</h3>
+            <p>Oferecemos atendimento clínico preventivo e emergencial com veterinários qualificados.</p>
+            <img src="IMAGEM/consultasveterinarias.jfif" alt="Imagem de Consulta Veterinária">
+          </li>
+          <li>
+            <h3>Hospedagem</h3>
+            <p>Proporcionamos um ambiente confortável e seguro para seu pet durante a sua viagem.</p>
+            <img src="IMAGEM/hospedagempet.jfif" alt="Imagem de Hospedagem">
+          </li>
+          </ul>
+      </section>
+      <section id="produtos">
+        <h2>Produtos à Venda no Reino Animal Pet Shop</h2>
+        <p>Confira nossa ampla gama de produtos para o seu pet:</p>
+        <div class="produtos">
+          <div class="produto">
+            <img src="IMAGEM/racaosuperpremium.jfif" alt="Ração">
+            <h3>Ração Super Premium</h3>
+            <p>Alimento completo para cães e gatos de todas as idades.</p>
+          </div>
+          <div class="produto">
+            <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
+            <h3>Brinquedo Mordedor</h3>
+            <p>Distração e diversão para o seu pet.</p>
+          </div>
+          <div class="produto">
+            <img src="IMAGEM/cacoderacao.jfif" alt="Caco">
+            <h3>Caco de Ração</h3>
+            <p>Seu pet merece o melhor.</p>
+          </div>
+          </div>
+      </section>
+      <section id="depoimentos">
+        <h2>Depoimentos dos Clientes</h2>
+        <p>"Atendimento excelente! Meu pet adorou o banho e a tosa!" - cliente satisfeito</p>
+        <p>"Levo meu cachorro para consulta com a veterinária há anos. Profissional muito atenciosa!" - cliente satisfeito</p>
+        </section>
+      <section id="blog">
+        <h2>Blog do Reino Animal Pet Shop</h2>
+        <p>Confira aqui dicas para cuidar do seu pet e novidades do mundo animal.</p>
+        </section>
+      <section id="contato">
+        <h2>Contato</h2>
+        <form action="enviar_email.php" method="post"> <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+      </main>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos-servico.html">Termos de Serviço</a></li>
+            <li><a href="mapa-site.html">Mapa do Site</a></li>
+          </ul>
+          <div class="redes-sociais">
+            </div>
+        </nav>
+        <p class="direitos">&copy; 2024 Reino Animal Pet Shop. Todos os direitos reservados.</p>
+      </footer>
+    </body>
+    </html>
+    
