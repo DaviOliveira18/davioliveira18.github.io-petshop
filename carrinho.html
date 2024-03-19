@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Animal Pet Shop</title>
+  <link rel="stylesheet" href="CSS/compras.css">
+  <link rel="shortcut icon" href="IMAGEM/slogan.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <section id="destaque">
+        <div class="img">
+
+        </div>
+        <div class="container-imagem">
+            <img src="IMAGEM/slogan.png" alt="Imagem de Destaque">
+        </div>
+      
+        <h1>Reino Animal Pet Shop!</h1>
+        <p>Oferecemos os melhores serviços e produtos para o seu pet.</p>
+    </section>
+      <ul class="menu">
+        <li><a href="#destaque">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+  <main>
+    <!---------------------  CARRINHO DE COMPRAS  ------------------------->
+    <section class="compras">
+        <br><br>
+        <h1>CARRINHO DE COMPRAS</h1>
+        <br>
+        <div class="produtos">
+            <p id="proutos">Produtos</p>
+            <br>
+            <p id="desconto">Desconto</p>
+            <br>
+            <p id="preco">Preço</p>
+            <p id="quantidade">Quantidade</p>
+            <p id="total">Total</p>
+        </div>
+        <br><br><br><br>
+    </section>
+
+    <section class="prodCarrinho">
+
+
+    </section>
+
+
+
+
+    <!--------------------------------------------------------------------->
+
+    <!----------------------------- CONTATOS ------------------------------>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="enviar_email.php" method="post"> <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </section>
+    </main>
+    <footer>
+    <nav>
+        <div class="contato">
+        <p>Telefone: (xx) xxxx-xxxx</p>
+        <p>Email: exemplo@petshop.com</p>
+        <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+        </div>
+        <ul class="ptm">
+        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-servico.html">Termos de Serviço</a></li>
+        <li><a href="mapa-site.html">Mapa do Site</a></li>
+        </ul>
+        <div class="redes-sociais">
+        </div>
+    </nav>
+    <p class="direitos">&copy; 2024 Reino Animal Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+    

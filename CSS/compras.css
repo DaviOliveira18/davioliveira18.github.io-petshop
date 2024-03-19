@@ -1,0 +1,353 @@
+/* Redefinição de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo base da página */
+  body {
+    black
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
+  
+  h5 {
+    font-size: 14px;
+  }
+  
+  h6 {
+    font-size: 12px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Títulos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
+  
+  h5 {
+    font-size: 14px;
+  }
+  
+  h6 {
+    font-size: 12px;
+  }
+  
+  /* Parágrafos */
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Imagens */
+  img {
+    max-width: 15%;
+  }
+  
+  .container-imagem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #007bff;
+    border-bottom: 1px solid #ddd;
+    color: black
+  }
+  
+  /* Menu */
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    list-style: underline;
+    padding: 0;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+  }
+  
+  .menu {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+
+
+  .container-imagem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #007bff;
+    border-bottom: 1px solid #ddd;
+    color: black
+  }
+
+
+/* Seção de destaque */
+#destaque {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 100px;
+  }
+  
+  #destaque {
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+
+
+
+  /*Seção de compras- CARRINHO*/
+  .compras h1{
+    text-align: center;
+    border: 1px;
+  }
+
+  .compras{
+    background-color: #00000013;
+  }
+
+  .produtos{
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    width: 55%;
+    height: 100%;
+    background-color: #ccc;
+    text-align: center;
+    margin: 40px 20px;
+    padding: 10px;
+  } 
+  #proutos{
+    margin: 10px;
+    margin-right: 5%;
+    border-radius: black;
+    padding: 10px;
+  }
+  #desconto{
+    margin: 10px;
+    margin-right: 5%;
+    padding: 10px;
+  }
+  #preco{
+    margin: 10px;
+    margin-right: 5%;
+    padding: 10px;
+  }
+  #quantidade{
+    margin: 10px;
+    margin-right: 5%;
+    padding: 10px;
+  }
+  #total{
+    margin: 10px;
+    margin-left: 20%;
+    padding: 10px;
+  }
+
+
+
+  .produtos {
+    box-shadow: 5px 5px #00000027;
+    width: 70%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  
+  }
+
+
+
+
+
+
+
+/*---------------------------------------*/
+
+
+
+
+  /* Seção de contato */
+  #contato {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  #contato h2 {
+    text-align: center;
+  }
+  
+  #contato form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  #contato label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #contato input,
+  #contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  #contato textarea {
+    height: 100px;
+  }
+  
+  #contato input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+/* Informações de contato no rodapé */
+.contato {
+float: right;
+    margin-top: auto;
+}
+
+.contato p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+    
+
+
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ptm{
+    margin-left: -9%;
+  }
+  
+  footer .redes-sociais {
+    float: right;
+  }
+  
+  footer .redes-sociais a {
+    margin-right: 10px;
+  }
+  
+  footer .direitos {
+    margin-top: 10px;
+  }
+  
+  /* Estilo dos links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  

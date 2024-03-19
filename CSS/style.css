@@ -1,0 +1,461 @@
+/* Redefinição de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base da página */
+body {
+  black
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 10px;
+}
+
+/* Imagens */
+img {
+  max-width: 15%;
+}
+
+.container-imagem {
+  display: flex;
+  justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007bff;
+  border-bottom: 1px solid #ddd;
+  color: black
+}
+
+/* Menu */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: underline;
+  padding: 0;
+  text-align: center;
+  text-decoration:none;
+  color: black;
+}
+
+.menu {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+#imgCarrinho{
+  width: 5%;
+  height: 5%;
+  margin: 1px 10px;
+}
+/* Informações de contato no rodapé */
+.contato {
+  float: right;
+  margin-top: auto;
+}
+
+.contato p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Seção de destaque */
+#destaque {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+#destaque {
+  display: block;
+  margin: auto;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+/* Seção sobre */
+#sobre {
+  padding: 50px 0;
+}
+
+#sobre h2 {
+  text-align: center;
+}
+
+#sobre p {
+  text-align: justify;
+  margin-left: 8%;
+}
+
+/* Equipe */
+.equipeTitulo{
+  text-align: center;
+  
+}
+
+#equipe {
+  max-width: 100%;
+  margin: center;
+  display: block;
+  flex-wrap: wrap;
+}
+
+
+
+.containerEquipe{
+  display: flex; /*deixar immagens dos membro da equipe um do lado do outro*/
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/*membro*/
+.membro1 {
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  width: 350px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.membro1 img {
+  display: inline-block;
+  margin: 0  auto;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.membro2 {
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  width: 350px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+.membro2 img {
+  display: inline-block;
+  margin: 0  auto;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Seção de serviços */
+#servicos {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#servicos h2 {
+  text-align: center;
+}
+
+#servicos ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#servicos li {
+  box-shadow: 5px 5px #00000027;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+
+}
+#servicos li button {
+  border-style: dashed; /*estilo da borda do botão*/
+  border-color  : white;/*cor da borda do botão*/
+  background-color:green; /*cor do botão*/
+  padding: 15px 20px; /*altura e largura do botão*/
+  border-radius: 10%; /*borda do botão*/
+  margin: 50px; 
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/*efeitos do botão*/
+#servicos li button:hover{
+  transition: 0.5s;
+  background-color: red;
+  border-style: dashed;
+  border-color: white;
+}
+
+
+#servicos li img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+/* Seção de produtos */
+#produtos {
+  padding: 50px 0;
+}
+
+#produtos h2 {
+  text-align: center;
+}
+
+#produtos p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.produtos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.produto img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+/* Seção de depoimentos */
+#depoimentos {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#depoimentos h2 {
+  text-align: center;
+}
+
+#depoimentos p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Seção de blog */
+#blog {
+  padding: 50px 0;
+}
+
+#blog h2 {
+  text-align: center;
+}
+
+#blog p {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Seção de contato */
+#contato {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#contato h2 {
+  text-align: center;
+}
+
+#contato form {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#contato textarea {
+  height: 100px;
+}
+
+#contato input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ptm{
+  margin-left: -9%;
+}
+
+footer .redes-sociais {
+  float: right;
+}
+
+footer .redes-sociais a {
+  margin-right: 10px;
+}
+
+footer .direitos {
+  margin-top: 10px;
+}
+
+/* Estilo dos links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
