@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Animal Pet Shop</title>
+  <link rel="stylesheet" href="CSS/compras.css">
+  <link rel="shortcut icon" href="IMAGEM/slogan.png" type="image/x-icon">
+</head>
+<body>
+<script src="script.js"></script>
+<script>
+  // Função para exibir os itens do carrinho na página do carrinho
+  function displayCart() {
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    const cartList = document.getElementById('cart');
+  
+    // Limpa o conteúdo atual do carrinho
+    cartList.innerHTML = '';
+  
+    // Verifica se há itens no carrinho
+    if (cart && cart.length > 0) {
+      // Loop através de cada item do carrinho e adiciona à lista
+      cart.forEach(item => {
+        const cartItem = document.createElement('li');
+  
+        const itemImage = document.createElement('img');
+        itemImage.src = item.image;
+        itemImage.alt = item.name;
+        cartItem.appendChild(itemImage);
+  
+        const itemName = document.createElement('p');
+        itemName.textContent = item.name;
+        cartItem.appendChild(itemName);
+  
+        const itemPrice = document.createElement('p');
+        itemPrice.textContent = item.price;
+        cartItem.appendChild(itemPrice);
+  
+        cartList.appendChild(cartItem);
+      });
+    } else {
+      // Se o carrinho estiver vazio, exibe uma mensagem
+      cartList.innerHTML = '<p>Carrinho vazio</p>';
+    }
+  }
+  
+  // Chama a função para exibir os itens do carrinho ao carregar a página
+  window.onload = displayCart;
+</script>
+
+
+  <header>
+    <nav>
+      <section id="destaque">
+        <div class="img">
+
+        </div>
+        <div class="container-imagem">
+            <img src="IMAGEM/slogan.png" alt="Imagem de Destaque">
+        </div>
+      
+        <h1>Reino Animal Pet Shop!</h1>
+        <p>Oferecemos os melhores serviços e produtos para o seu pet.</p>
+    </section>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="index.html">Serviços</a></li>
+        <li><a href="index.html">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+  <main>
+    
+   <!---------------------  CARRINHO DE COMPRAS  ------------------------->
+    <section class="compras">
+        <br><br>
+        <h1>CARRINHO DE COMPRAS</h1>
+        <br>
+        <div class="produtos">
+            <p id="proutos">Produtos</p>
+            <p id="preco">Preço</p>
+            <p id="quantidade">Quantidade</p>
+            <p id="total">Total</p>
+        </div>
+    <!-- Produtos do carrinho 
+        
+        <div class="produto1">
+          <img src="IMAGEM/racaosuperpremium.jfif" alt="Ração">
+          <h3>Ração Super Premium</h3>
+          <br>
+        </div>
+        <div class="desconto">
+          
+
+        </div>
+
+
+        <div class="produto2">
+          <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
+          <h3>Brinquedo Mordedor</h3>
+        </div>
+        <br><br><br><br>
+      </section>
+
+    <section class="prodCarrinho">
+
+
+    </section>
+   ----------------------------------- -->
+
+
+
+    <!--------------------------------------------------------------------->
+
+    <!----------------------------- CONTATOS ------------------------------>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="enviar_email.php" method="post"> <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </section>
+    </main>
+    <footer>
+    <nav>
+        <div class="contato">
+        <p>Telefone: (xx) xxxx-xxxx</p>
+        <p>Email: exemplo@petshop.com</p>
+        <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+        </div>
+        <ul class="ptm">
+        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-servico.html">Termos de Serviço</a></li>
+        <li><a href="mapa-site.html">Mapa do Site</a></li>
+        </ul>
+        <div class="redes-sociais">
+        </div>
+    </nav>
+    <p class="direitos">&copy; 2024 Reino Animal Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+    

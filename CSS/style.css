@@ -7,6 +7,7 @@
 
 /* Estilo base da página */
 body {
+  black
   font-family: Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -53,7 +54,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #007bff;
+  color: black;
 }
 
 a:hover {
@@ -102,40 +103,68 @@ p {
 
 /* Imagens */
 img {
-  max-width: 100%;
+  max-width: 15%;
 }
 
 .container-imagem {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #f5f5f5;
+  background-color: #007bff;
   border-bottom: 1px solid #ddd;
+  color: black
 }
 
 /* Menu */
 nav {
   max-width: 1200px;
+  max-height: 600px;
   margin: 0 auto;
 }
 
 ul {
-  list-style: none;
+  list-style: underline;
   padding: 0;
+  text-align: center;
+  text-decoration:none;
+  color: black;
 }
+
+.menu {
+  background-color: white;
+  margin-left: 25.8%;
+  margin-top: -40px;
+  width: 48%;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+/*menu home, sobre, servicos...*/
+.menu a{
+  text-align: center;
+  align-items: center;
+} 
 
 li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding: 10px;
 }
-
-/* Informações de contato no cabeçalho */
+#imgCarrinho{
+  width: 5%;
+  height: 5%;
+  margin: 1px 10px;
+}
+/* Informações de contato no rodapé */
 .contato {
   float: right;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .contato p {
@@ -148,13 +177,14 @@ li {
   background-color: #007bff;
   color: #fff;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 100px;
 }
 
-#destaque img {
+#destaque {
   display: block;
-  margin: 0 auto;
-  max-width: 200px;
+  margin: auto;
+  margin-left: 0;
+  max-width: 100%;
 }
 
 /* Seção sobre */
@@ -168,27 +198,74 @@ li {
 
 #sobre p {
   text-align: justify;
+  margin-left: 8%;
 }
 
 /* Equipe */
+.equipeTitulo{
+  text-align: center;
+  
+}
+
 #equipe {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
+  max-width: 100%;
+  margin: center;
+  display: block;
   flex-wrap: wrap;
 }
 
-.membro {
-  margin: 10px;
-  width: 30%;
+
+
+.containerEquipe{
+  display: flex; /*deixar immagens dos membro da equipe um do lado do outro*/
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/*membro*/
+.membro1 {
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  width: 350px;
   text-align: center;
   border: 1px solid #ddd;
   padding: 20px;
+  box-shadow: 5px 5px #00000027;
+  border-radius: 10px;
+  background-color: #007bffb4;
 }
 
-.membro img {
-  display: block;
-  margin: 0 auto;
+.membro1 img {
+  display: inline-block;
+  margin: 0  auto;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.membro2 {
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  width: 350px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 16px;
+  box-shadow: 5px 5px #00000027;
+  border-radius: 10px;
+  background-color: #007bffb4;
+}
+
+.membro2 img {
+  display: inline-block;
+  margin: 0  auto;
   max-width: 100px;
   border-radius: 50%;
 }
@@ -196,7 +273,6 @@ li {
 /* Seção de serviços */
 #servicos {
   padding: 50px 0;
-  background-color: #f5f5f5;
 }
 
 #servicos h2 {
@@ -211,12 +287,36 @@ li {
 }
 
 #servicos li {
+  background-color: #33333314
+  ;
+  box-shadow: 5px 5px #00000027;
   width: 30%;
   margin: 10px;
   padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 10px;
   text-align: center;
+
 }
+#servicos li button {
+  border-style: dashed; /*estilo da borda do botão*/
+  border-color  : white;/*cor da borda do botão*/
+  background-color:green; /*cor do botão*/
+  padding: 15px 20px; /*altura e largura do botão*/
+  border-radius: 10%; /*borda do botão*/
+  margin: 50px; 
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/*efeitos do botão*/
+#servicos li button:hover {
+  transition: 0.5s;
+  background-color: red;
+  border-style: dashed;
+  border-color: white;
+}
+
 
 #servicos li img {
   display: block;
@@ -227,6 +327,7 @@ li {
 /* Seção de produtos */
 #produtos {
   padding: 50px 0;
+  
 }
 
 #produtos h2 {
@@ -246,7 +347,29 @@ li {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
+
+/*Botão de comprar produtos*/
+.produtos button {
+  border-style: dashed; /*estilo da borda do botão*/
+  border-color  : white;/*cor da borda do botão*/
+  background-color:green; /*cor do botão*/
+  padding: 15px 20px; /*altura e largura do botão*/
+  border-radius: 10%; /*borda do botão*/
+  margin: 50px; 
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.produtos button:hover {
+  transition: 0.5s;
+  background-color: red;
+  border-style: dashed;
+  border-color: white;
+}
+
+/*--------------------------*/
 
 .produto {
   width: 30%;
@@ -254,6 +377,9 @@ li {
   padding: 20px;
   border: 1px solid #ddd;
   text-align: center;
+  box-shadow: 5px 5px #00000027;
+  border-radius: 10px;
+  background-color: #33333314;
 }
 
 .produto img {
@@ -273,7 +399,7 @@ li {
 }
 
 #depoimentos p {
-  text-align: justify;
+  text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -290,7 +416,7 @@ li {
 }
 
 #blog p {
-  text-align: justify;
+  text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -305,13 +431,17 @@ li {
 
 #contato h2 {
   text-align: center;
+  font-weight: bold;
 }
 
 #contato form {
-  max-width: 1200px;
+  max-width: 600px;
+  max-height: 600px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 #contato label {
@@ -350,6 +480,10 @@ footer nav {
   margin: 0 auto;
 }
 
+.ptm{
+  margin-left: -9%;
+}
+
 footer .redes-sociais {
   float: right;
 }
@@ -362,13 +496,16 @@ footer .direitos {
   margin-top: 10px;
 }
 
-/* Estilo dos links */
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-a:hover {
-  color: #0056b3;
-}
+  /* Estilo dos links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #b30000;
+  }
+  
 
