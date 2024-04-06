@@ -60,62 +60,64 @@
     </section>
     <section id="servicos">
         <h2>Serviços do Reino Animal Pet Shop</h2>
-        <ul>
+        <ul class="cart">
           <li>
             <h3>Banho e Tosa</h3>
             <p>Realizamos banho completo, tosa higiênica e tosa especial com diversas opções de cortes.</p>
             <img src="IMAGEM/banhoetosa.jfif" alt="Imagem de Banho e Tosa">
             <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
-          
+            <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
           </li>
+          
           <li>
             <h3>Consultas Veterinárias</h3>
             <p>Oferecemos atendimento clínico preventivo e emergencial com veterinários qualificados.</p>
             <img src="IMAGEM/consultasveterinarias.jfif" alt="Imagem de Consulta Veterinária">
             <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
-
+            <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
           </li>
+
           <li>
             <h3>Hospedagem</h3>
             <p>Proporcionamos um ambiente confortável e seguro para seu pet durante a sua viagem.</p>
             <img src="IMAGEM/hospedagempet.jfif" alt="Imagem de Hospedagem">
             <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
-
+            <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
           </li>
-          </ul>
+
+        </ul>
       </section>
       <section id="produtos">
         <h2>Produtos à Venda no Reino Animal Pet Shop</h2>
         <p>Confira nossa ampla gama de produtos para o seu pet:</p>
-        <div class="produtos">
-          <div class="produto">
-            <h3>Ração Super Premium</h3>
-            <img src="IMAGEM/racaosuperpremium.jfif" alt="Ração">
-            <p>Alimento completo para cães e gatos de todas as idades.</p>
-            <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
+        <ul class="cart">
+          <li class="produtos">
+            <li class="produto">
+              <h3>Ração Super Premium</h3>
+              <img src="IMAGEM/racaosuperpremium.jfif" alt="Ração">
+              <p>Alimento completo para cães e gatos de todas as idades.</p>
+              <p>Preço: R$ 10,00</p>
+              <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
+            </li>
 
-          </div>
-          <div class="produto">
-            <h3>Brinquedo Mordedor</h3>
-            <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
-            <p>Distração e diversão para o seu pet.</p>
-            <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
+            <li class="produto">
+              <h3>Brinquedo Mordedor</h3>
+              <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
+              <p>Distração e diversão para o seu pet.</p>
+              <p>Preço: R$ 10,00</p>
+              <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
+            </li>
 
-          </div>
-          <div class="produto">
-            <h3>Caco de Ração</h3>
-            <img src="IMAGEM/cacoderacao.jfif" alt="Caco">
-            <p>Seu pet merece o melhor.</p>
-            <p>Preço: R$ 10,00</p>
-            <button id="btnComprar">Comprar</button>
+            <li class="produto">
+              <h3>Caco de Ração</h3>
+              <img src="IMAGEM/cacoderacao.jfif" alt="Caco">
+              <p>Seu pet merece o melhor.</p>
+              <p>Preço: R$ 10,00</p>
+              <button id="btnComprar" onclick="addToCart(event)">Comprar</button>
+            </li>
 
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section id="depoimentos">
         <h2>Depoimentos dos Clientes</h2>
@@ -159,8 +161,10 @@
     </nav>
     <p class="direitos">&copy; 2024 Reino Animal Pet Shop. Todos os direitos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+  <script async src="script.js"></script>
 </body>
 </html>
     
+
+
 

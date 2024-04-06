@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reino Animal Pet Shop</title>
-  <link rel="stylesheet" href="CSS/compras.css">
+  <link rel="stylesheet" href="CSS/carrinho.css">
   <link rel="shortcut icon" href="IMAGEM/slogan.png" type="image/x-icon">
 </head>
 <body>
@@ -22,7 +22,7 @@
     if (cart && cart.length > 0) {
       // Loop através de cada item do carrinho e adiciona à lista
       cart.forEach(item => {
-        const cartItem = document.createElement('li');
+        const cartItem = document.createElement('ul');
   
         const itemImage = document.createElement('img');
         itemImage.src = item.image;
@@ -75,65 +75,67 @@
   </header>
   <main>
     
-   <!---------------------  CARRINHO DE COMPRAS  ------------------------->
+      <!---------------------  CARRINHO DE COMPRAS  ------------------------->
     <section class="compras">
-        <br><br>
-        <h1>CARRINHO DE COMPRAS</h1>
-        <br>
-        <div class="produtos">
-            <p id="proutos">Produtos</p>
-            <p id="preco">Preço</p>
-            <p id="quantidade">Quantidade</p>
-            <p id="total">Total</p>
-        </div>
-    <!-- Produtos do carrinho 
-        
-        <div class="produto1">
+      <br><br>
+      <h1>CARRINHO DE COMPRAS</h1>
+      <br>
+      <li class="produtos">
+          <p id="proutos">Produtos</p>
+          <p id="preco">Preço</p>
+          <p id="quantidade">Quantidade</p>
+          <p id="total">Total</p>
+      </li>
+     
+    <!---------------------  Produtos do carrinho  ------------------------->
+      <section class="ProdutosDoCarrinho">  
+        <ul class="produto1">
           <img src="IMAGEM/racaosuperpremium.jfif" alt="Ração">
-          <h3>Ração Super Premium</h3>
-          <br>
-        </div>
-        <div class="desconto">
-          
-
-        </div>
-
-
-        <div class="produto2">
-          <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
-          <h3>Brinquedo Mordedor</h3>
-        </div>
-        <br><br><br><br>
+          <li class="nomeDoProduto">
+            <h3>Ração Super Premium</h3>
+          </li>
+          <p class="produto1Preço">R$XX,XX</p>
+       
+          <li class="QuantidadeDeProduto">
+            <button class="btnDiminuir">-</button>
+            <p class="qtd">1</p>
+            <button class="btnAumentar">+</button>
+          </li>
+        </ul>
       </section>
 
-    <section class="prodCarrinho">
+<!---------------------
+        <ul class="produto2">
+          <img src="IMAGEM/brinquedomordedor.jfif" alt="Brinquedo">
+          <h3>Brinquedo Mordedor</h3>
+          <p>Preço: R$XX,XX</p>
+        </ul>
 
-
+        <br><br><br><br>
+      ------>
+      
     </section>
-   ----------------------------------- -->
-
-
-
     <!--------------------------------------------------------------------->
+
 
     <!----------------------------- CONTATOS ------------------------------>
     <section id="contato">
-        <h2>Contato</h2>
-        <form action="enviar_email.php" method="post"> <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone">
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <input type="submit" value="Enviar">
-            
-        </form>
+      <h2>Contato</h2>
+      <form action="enviar_email.php" method="post"> <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <input type="submit" value="Enviar">
+          
+      </form>
     </section>
-    </main>
+  </main>
     <footer>
     <nav>
         <div class="contato">
@@ -154,3 +156,4 @@
 </body>
 </html>
     
+
